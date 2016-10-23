@@ -90,9 +90,13 @@ print(hex(id(name2)))
 
 for i in names:
     print((hex(id(i))),i)
-
-
-
-
-
 #del name2
+
+p1 = names[:]
+p2 = names[:]
+
+print(hex(id(p1)))
+print(hex(id(p2)))
+
+
+

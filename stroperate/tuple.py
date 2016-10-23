@@ -3,37 +3,37 @@
 #The Shopping car exercise use list
 
 goodsList = ['1.Iphone      5800','2:Mac Pro     12000','3:Bike        700','4:Book        80']
-price = ['5800','12000','700','80']
 
-salary = int(input("Input your salary:"))
 
-shoppingCar = []
+salary = int(input("Input your salary:")) #input Balance
 
-def printInfo():
+shoppingCar = []  #goods list default is empty
+
+def printInfo():  #func print goods infomation
     print('goodsInfo     Price')
     for i in goodsList:
         print(i)
 
-choice = 'C'
+choice = 'C'  #default value
 
 while True:
-    if choice != 'B':
-        printInfo()
+    if choice != 'B':  #go back here print goods info if choice not 'B'
+        printInfo()    #print goods info
     choice = input("Choise Goods or input Q to exit:")
-    if choice == 'Q':
+    if choice == 'Q':  #choice 'Q' to exit
         break
     elif(choice == '1'):
-        if(salary < 5800):
+        if(salary < 5800):  #count balance
             print("Sorry your balance is not enough to buy it!")
             choice = input('Enter the B to goback or Q to exit:')
             if(choice == 'Q'):
-                break
+                break         #exit
             elif(choice == "B"):
                 printInfo()
                 continue
         else:
             print('Successful added the goods to your shoppping car!')
-            shoppingCar.append('Iphone')
+            shoppingCar.append('Iphone')   #append goods to shopping car
             salary = salary - 5800
             print('You have %d Balance yet!'%salary)
     elif (choice == '2'):
@@ -80,10 +80,10 @@ while True:
             salary = salary - 80
             print('You have %d Balance yet!' % salary)
 
-print('Your choice goods is:')
+print('Your choice goods is:')   #print choise goods list
 for i in shoppingCar:
     print(i)
-print('Your Balance is %d'%salary)
-print('Thank you,Bye,Bye!!')
+print('Your Balance is %d'%salary)  #pint balance
+print('Thank you,Bye,Bye!!')        #exit
 
 

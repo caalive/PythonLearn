@@ -1,5 +1,4 @@
 
-
 product_list = [('Iphone',5800),         #product info use list
                 ('Mac Pro',9800),
                 ('Bike',800),

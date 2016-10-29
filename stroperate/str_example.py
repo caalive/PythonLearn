@@ -49,7 +49,7 @@ print("caaa".rfind("h")) #匹配最后一个匹配的字符下标，失败返回
 
 print("chEn aNan".swapcase())  #大小写变换 大写变小写，小写边大写
 
-print("ss".zfill(10)) #返回字符总长度为设置值不够用0填充 
+print("ss".zfill(10)) #返回字符总长度为设置值不够用0填充
 
 
 
